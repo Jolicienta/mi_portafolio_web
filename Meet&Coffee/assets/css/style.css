@@ -1,0 +1,313 @@
+html {
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+/*NABVAR*/
+
+nav {
+  background-color: #000F08;
+  margin: 0;
+  height: 70px;
+  position: relative;
+  text-align: left;
+  z-index: 10;
+  padding-left: 7%;;
+  line-height: 70px;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav li{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin-right: 30px;
+}
+
+nav li:first-child {
+  margin-left: 30px;
+}
+
+nav img {
+  filter: invert();
+  width: 30px;
+  position: absolute;
+  top: 30%;
+}
+
+/*BANNER*/
+
+.banner {
+  position: relative;
+  border: 3px black;
+  text-align: right;
+  color: white;
+  height: auto;
+  position: relative;
+}
+
+.encabezado {
+  z-index: 10;
+  position: absolute;
+  padding-top: 0px;
+  padding-left: 33%;
+  padding-right: 10%;
+  display: block;
+}
+
+.titulo-banner {
+  margin-bottom: 0px;
+  font-size: 40px;
+  font-weight: 800;
+  text-shadow: 0 1px 2px #00000080;
+}
+
+.bajada-banner {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0;
+}
+
+#img-banner {
+  background-image: url(../img/bg-hero.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 280px;
+  z-index: -10;
+}
+
+/*SECCIÓN WORK*/
+
+.work {
+  text-align: center;
+  padding: 120px;
+  color: #000F08;
+}
+
+.work img {
+  width: 35%;
+  margin-bottom: 20px;
+}
+
+.titulo {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.contenido {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.work .contenido {
+  width: 500px;
+}
+
+/* Sección Próxima Charla */
+
+.next {
+  background: #A4452C;
+  padding: 70px;
+  padding-left: 110px;
+  color: #FFFFFF;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.charla {
+  text-align: left;
+  width: 60%;
+  margin: 0px;
+}
+
+#next-img {
+  position: relative;
+  display: inline;
+  text-align: left;
+  margin-top: 0;
+  width: 200px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.texto {
+  width: 65%;
+  float: right;
+  margin-left: 15px;
+  justify-content: center;
+}
+
+.sub-titulo {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.expositor {
+  font-size: 23px;
+  font-weight: 400;
+  margin: 10px 0 10px 0;
+  margin-bottom: 0;
+}
+
+.next h5 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.next .contenido {
+  margin-bottom: 0;
+}
+
+/*EVENTOS ANTERIORES*/
+
+.eventos {
+  padding: 100px;
+  padding-left: 130px;
+  color: #000F08;
+  margin-bottom: 300px;
+}
+
+#evento {
+  width: 26%;
+  height: 250px;
+  float: left;
+}
+
+.evento1, .evento2 {
+  margin-right: 90px;
+}
+
+.contenedor-img {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.img {
+  position: relative;
+  background-size: cover;
+  height: 160px;
+}
+
+#img1 {
+  background-image: linear-gradient(
+      rgba(179, 107, 1, 0.13),
+      rgba(179, 107, 1, 0.13)
+    ), url(../img/post-1.jpg);
+  background-position: center;
+  width: 400px;
+  margin-left: -75px;
+}
+
+#img2 {
+  background-image: linear-gradient(
+      rgba(179, 107, 1, 0.13),
+      rgba(179, 107, 1, 0.13)
+    ), url(../img/machine-learning.jpg);
+}
+
+#img3 {
+  background-image: linear-gradient(
+      rgba(179, 107, 1, 0.13),
+      rgba(179, 107, 1, 0.13)
+    ), url(../img/scrum-sin-scream.jpg);
+  color: rgb();
+  position: relative;
+  background-size: cover;
+  height: 170px;
+}
+
+#evento a {
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  color: #000F08;
+  margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  height: 150px;
+  background-color: black;
+  color: white;
+  padding-top: 50px;
+}
+
+footer li {
+  text-decoration: none;
+  display: inline;
+}
+
+footer i {
+  color: white;
+  font-size: 50px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  display: inline;
+  position: relative;
+}
+
+
+/* Página enlazada de Eventos anteriores */
+
+.articulo {
+  text-align: center;
+  color: #000F08;
+  margin-bottom: 100px;
+}
+
+.simposio-page {
+  width: 55%;
+  font-size: 12px;
+  text-align: left;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.articulo .titulo {
+  margin-bottom: 50px;
+}
+
+.sepia {
+  background: #B36B0124 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+  width: 55%;
+  height: 380px;
+  position: absolute;
+}
+
+#img-articulo {
+  width: 100%;
+  height: 380px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.articulo .contenido {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}

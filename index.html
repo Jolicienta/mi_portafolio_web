@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <!-- Enlace a los íconos de Fontawesome -->
+    <script src="https://kit.fontawesome.com/41b8753ddc.js" crossorigin="anonymous"></script>
+    <!-- Enlace a las fuentes usadas desde Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Dr+Sugiyama|Handlee|Kavivanar|Lato:400,700|Satisfy&display=swap" rel="stylesheet">
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Enlace a la hoja de estilos de Tooltipster -->
+    <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css">
+    <!-- Enlace a mi propia hoja de estilos -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+
+    <section class="encabezado row text-center d-flex flex-column container-fluid" id="encabezado">
+      <div class="container">
+        <p class="nombre">Natalia Campos Godoy</p>
+        <p class="apodo">"Jolicienta"</p>
+        <p class="ocupacion">UX-Designer</p>
+      </div>
+      <div class="navegacion text-center d-flex align-items-center justify-content-center">
+        <ul>
+          <li class="mg-right"><a href="#yo">Sobre mí</a></li>
+          <li class="mg-right"><a href="#conocimientos">Conocimientos</a></li>
+          <li class="mg-right"><a href="#habilidades">Habilidades Blandas</a></li>
+          <li class="mg-right"><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#contacto">Contáctame</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="yo row container-fluid" id="yo">
+      <div class="col-md-5 col-sm-12">
+        <img src="assets/img/yo.jpg" alt="" class="img-fluid">
+        <div class="text-movil">
+
+          <!-- Button trigger modal -->
+          <button type="button" class="info" data-toggle="modal" data-target="#staticBackdrop">
+            Sobre mí...
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <p class="modal-title" id="staticBackdropLabel">Sobre mí...</p>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="quote">
+                    <span><b><<</b></span><br>
+                    Nací en Santiago, y desde pequeña se me inculcó que una buena educación sería mi puerta al mundo. Siempre fui muy
+                    buena en ello. Cursé la enseñanza media en un excelente liceo emblemático, y algunos años
+                    en carreras en el área de las ciencias en la Universidad de Chile, pero decidí por un tema de
+                    rentabilidad dejarlas y probar en el área de Diseño Gráfico en la misma universidad. Allí
+                    adquirí variados conocimientos que me sirven bastante también en el área de programación y
+                    habilidades blandas en el trato con los clientes. Actualmente me hayo estudiando UX-Designer
+                    en Talento Digital.<br>
+                    <span><b>>></b></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sobre_mi col-md-6">
+        <p class="titulo">Sobre mí...</p>
+        <p class="quote">
+          <span><b><<</b></span> Nací en Santiago en una familia de clase media tradicional.
+          Desde pequeña se me inculcó que una buena educación sería mi puerta al mundo. Siempre fui muy
+          buena en ello. Salí entre los primeros lugares en mi generación de enseñanza
+          básica. Cursé la enseñanza media en un excelente liceo emblemático.
+          Durante algunos años estuve en carreras en el área de las ciencias en la Universidad
+          de Chile, pero decidí por un tema de rentabilidad dejarlas y probar en el área de
+          Diseño Gráfico, en la misma universidad. Allí adquirí variados conocimientos que
+          me sirven bastante también en el área de programación, como branding,
+          semiótica del color y habilidades blandas en el trato con los clientes.
+          Actualmente me hayo estudiando UX-Designer en Talento Digital.<span><b>>></b></span>
+        </p>
+      </div>
+      <div class="arrow col-md-1">
+        <a class="volver" href="#encabezado"><i class="fas fa-arrow-circle-up"></i></a>
+        <a class="avanzar" href="#conocimientos"><i class="fas fa-arrow-circle-down"></i></a>
+      </div>
+    </section>
+
+
+    <!-- Sección Conocimientos -->
+    <section class="conocimientos row container-fluid" id="conocimientos">
+      <div class="col-sm-12 text-center">
+        <p class="titulo">CONOCIMIENTOS</p>
+
+        <div class="accordion" id="accordionExample">
+
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <p class="subtitulo">Front-End</p>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul>
+                  <li data-toggle="tooltip" data-placement="bottom" title="HTML5"><i class="fab fa-html5" style="color: #F16529;"></i></li>
+                  <li data-toggle="tooltip" data-placement="bottom" title="CSS3"><i class="fab fa-css3-alt" style="color: #2194F1;"></i></li>
+                  <li data-toggle="tooltip" data-placement="bottom" title="Javascript"><i class="fab fa-js-square" style="color: #DE9D27; font-size: 49px;"></i></li>
+                  <li data-toggle="tooltip" data-placement="bottom" title="Bootstrap"><i class="fab fa-bootstrap" style="color: #533B78; font-size: 49px;"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <p class="subtitulo">Back-End</p>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul>
+                  <li data-toggle="tooltip" data-placement="bottom" title="Ruby"><img src="assets/img/logo-ruby.png" alt=""></li>
+                  <li data-toggle="tooltip" data-placement="bottom" title="Rails"><img src="assets/img/logo-rails.png" alt=""></li>
+                  <li data-toggle="tooltip" data-placement="bottom" title="PostgreSQL"><img src="assets/img/logo-postgresql.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <p class="subtitulo">Desarrollo en Sistemas</p>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul>
+                  <li data-toggle="tooltip" data-placement="bottom" title="Windows"><img src="assets/img/logo-windows.png" alt=""></li>
+                  <li data-toggle="tooltip" data-placement="bottom" title="Linux"><img src="assets/img/logo-linux.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <p class="subtitulo">Control de Versiones</p>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul>
+                  <li data-toggle="tooltip" data-placement="bottom" title="Git"><i class="fab fa-git-alt" style="color: #F16529; font-size: 55px;"></i></li>
+                  <li data-toggle="tooltip" data-placement="bottom" title="Github"><i class="fab fa-github" style="color: #2194F1; font-size: 55px"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h2 class="mb-0">
+                <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <p class="subtitulo">Programas de Edición</p>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul>
+                  <li data-toggle="tooltip" data-placement="bottom" title="Photoshop"><img src="assets/img/logo-photoshop.png" alt=""></li>
+                  <li data-toggle="tooltip" data-placement="bottom" title="Illustrator"><img src="assets/img/logo-illustrator.jpg" alt=""></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+    <!-- Sección Habilidades Blandas -->
+    <section class="habilidades row container-fluid" id="habilidades">
+      <div class="col-sm-12 text-center">
+        <p class="titulo">MIS HABILIDADES BLANDAS</p>
+
+        <!-- Carrusel de imágenes SLIDE -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/habilidades-personales.jpg" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/habilidades-sociales.jpg" class="d-block" alt="...">
+              </div>
+            </div>
+            <ol class="carousel-indicators">
+              <li id="circulo" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li id="circulo" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+          </div>
+        </div>
+    </section>
+
+    <!-- Sección Portafolio -->
+    <section class="portafolio row container-fluid" id="portafolio">
+      <div class="col-sm-12 text-center">
+        <p class="titulo">MIS TRABAJOS</p>
+
+        <div class="container">
+          <div class="img">
+            <img src="assets/img/meet-coffee-web.png" alt="Avatar" class="image">
+          </div>
+          <a href="Meet&Coffee/index.html">
+            <div class="overlay">
+              <div class="text">Meet & Coffee<br>(No versión movil)</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="container">
+          <div class="img">
+            <img src="assets/img/iguana-web.png" alt="Avatar" class="image">
+          </div>
+          <a href="Iguana/index.html">
+            <div class="overlay">
+              <div class="text">Iguana<br>(No versión movil)</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="container">
+          <div class="img">
+            <img src="assets/img/suricata-web.png" alt="Avatar" class="image">
+          </div>
+          <a href="Suricata/index.html">
+            <div class="overlay">
+              <div class="text">Suricata</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="container">
+          <div class="img">
+            <img src="assets/img/cuppon-web.png" alt="Avatar" class="image">
+          </div>
+          <a href="Cuppon/index.html">
+            <div class="overlay">
+              <div class="text">Cuppon</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="container">
+          <div class="img">
+            <img src="assets/img/ricomida-web.jpg" alt="Avatar" class="image">
+          </div>
+          <a href="Ricomida/index.html">
+            <div class="overlay">
+              <div class="text">Ricomida</div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Sección Contacto y Redes Sociales -->
+    <section class="contacto row container-fluid" id="contacto">
+      <div class="col-sm-12 text-center">
+        <p class="titulo">Gracias por visitar mi portafolio</p>
+        <p class="subtitulo">Si te ha gustado mi trabajo...</p>
+        <a class="typeform-share button" href="https://nataliacampos165412.typeform.com/to/TUtV15" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#543956;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:15px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">¡Contáctame! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+        <p class="subtitulo mt-5">Puedes visitar también mis redes sociales</p>
+        <ul>
+          <li style="margin-right: 10px;"><a href="https://www.linkedin.com/in/natalia-camposg/"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/Jolicienta"><i class="fab fa-github-square"></i></a></li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="row container-fluid">
+      <div class="col-sm-12 text-center">
+        <p class="apodo">"Jolicienta"</p>
+        <p>© Todos los derechos reservados, 2020</p>
+      </div>
+    </footer>
+
+
+    <!-- Scripts para el formulario de Typeform -->
+    <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script><!-- <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=RVjHMh&utm_source=typeform.com-01DZ4HHG647G32YZQSNQG7SM7E-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>-->
+    <!-- Scripts de JS y JQuery para Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js" charset="utf-8"></script>
+    <script>
+
+      $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+      })
+
+      $('#myCollapsible').collapse({
+        toggle: false
+      })
+
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+
+      $('.carousel').carousel({
+        interval: 6000
+      })
+
+    </script>
+  </body>
+</html>
