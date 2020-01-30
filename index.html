@@ -34,11 +34,14 @@
       </div>
     </section>
 
+
+    <!-- Sección "sobre mí" -->
     <section class="yo row container-fluid" id="yo">
       <div class="col-md-5 col-sm-12">
         <img src="assets/img/yo.jpg" alt="" class="img-fluid">
-        <div class="text-movil">
 
+        <!-- Sección "sobre mí" para versión movil -->
+        <div class="text-movil d-md-none">
           <!-- Button trigger modal -->
           <button type="button" class="info" data-toggle="modal" data-target="#staticBackdrop">
             Sobre mí...
@@ -72,6 +75,7 @@
         </div>
       </div>
 
+      <!-- Sección "sobre mí" para versión web -->
       <div class="sobre_mi col-md-6">
         <p class="titulo">Sobre mí...</p>
         <p class="quote">
@@ -87,18 +91,19 @@
           Actualmente me hayo estudiando UX-Designer en Talento Digital.<span><b>>></b></span>
         </p>
       </div>
-      <div class="arrow col-md-1">
-        <a class="volver" href="#encabezado"><i class="fas fa-arrow-circle-up"></i></a>
-        <a class="avanzar" href="#conocimientos"><i class="fas fa-arrow-circle-down"></i></a>
+      <div class="arrow col-md-1 d-flex justify-content-right ">
+        <a class="volver" href="#encabezado"><i class="fas fa-arrow-circle-up"></i>Inicio</a>
+        <a class="avanzar" href="#conocimientos"><p style="margin-bottom: 5px;">Sgte.</p><i class="fas fa-arrow-circle-down"></i></a>
       </div>
     </section>
 
 
     <!-- Sección Conocimientos -->
     <section class="conocimientos row container-fluid" id="conocimientos">
-      <div class="col-sm-12 text-center">
+      <div class="container col-sm-12 col-md-8 text-center">
         <p class="titulo">CONOCIMIENTOS</p>
 
+        <!-- Contenido para versión móvil -->
         <div class="accordion" id="accordionExample">
 
           <div class="card">
@@ -114,8 +119,8 @@
                 <ul>
                   <li data-toggle="tooltip" data-placement="bottom" title="HTML5"><i class="fab fa-html5" style="color: #F16529;"></i></li>
                   <li data-toggle="tooltip" data-placement="bottom" title="CSS3"><i class="fab fa-css3-alt" style="color: #2194F1;"></i></li>
-                  <li data-toggle="tooltip" data-placement="bottom" title="Javascript"><i class="fab fa-js-square" style="color: #DE9D27; font-size: 49px;"></i></li>
-                  <li data-toggle="tooltip" data-placement="bottom" title="Bootstrap"><i class="fab fa-bootstrap" style="color: #533B78; font-size: 49px;"></i></li>
+                  <li data-toggle="tooltip" data-placement="bottom" title="Javascript"><i class="fab fa-js-square" style="color: #DE9D27;"></i></li>
+                  <li data-toggle="tooltip" data-placement="bottom" title="Bootstrap"><i class="fab fa-bootstrap" style="color: #533B78;"></i></li>
                 </ul>
               </div>
             </div>
@@ -169,8 +174,8 @@
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
               <div class="card-body">
                 <ul>
-                  <li data-toggle="tooltip" data-placement="bottom" title="Git"><i class="fab fa-git-alt" style="color: #F16529; font-size: 55px;"></i></li>
-                  <li data-toggle="tooltip" data-placement="bottom" title="Github"><i class="fab fa-github" style="color: #2194F1; font-size: 55px"></i></li>
+                  <li data-toggle="tooltip" data-placement="bottom" title="Git"><i class="fab fa-git-alt" style="color: #F16529;"></i></li>
+                  <li data-toggle="tooltip" data-placement="bottom" title="Github"><i class="fab fa-github" style="color: #2194F1;"></i></li>
                 </ul>
               </div>
             </div>
@@ -195,15 +200,21 @@
           </div>
 
         </div>
+      </div>
+      <div class="arrow col-md-1 text-center">
+        <a class="volver" href="#encabezado"><i class="fas fa-arrow-circle-up"></i>Inicio</a>
+        <a class="avanzar" href="#habilidades"><p style="margin-bottom: 5px;">Sgte.</p><i class="fas fa-arrow-circle-down"></i></a>
+      </div>
     </section>
 
+
     <!-- Sección Habilidades Blandas -->
-    <section class="habilidades row container-fluid" id="habilidades">
-      <div class="col-sm-12 text-center">
+    <section class="habilidades row container-fluid text-center" id="habilidades">
+      <div class="col-sm-12 col-md-11">
         <p class="titulo">MIS HABILIDADES BLANDAS</p>
 
-        <!-- Carrusel de imágenes SLIDE -->
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <!-- Carrusel de imágenes SLIDE, sólo en versión móvil -->
+          <div id="carouselExampleIndicators" class="carousel slide d-md-none" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="assets/img/habilidades-personales.jpg" class="d-block" alt="...">
@@ -217,95 +228,168 @@
               <li id="circulo" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             </ol>
           </div>
+
+          <!-- Habilidades versión web -->
+          <div class="habilidades-web row">
+            <div class="col-md-3"></div>
+            <div class="col-md-4 text-align-center">
+              <div class="container">
+                <div class="img">
+                  <img src="assets/img/habilidades-personales-web.jpg" alt="Avatar" class="image">
+                </div>
+                <div class="overlay">
+                  <div class="text">Habilidades Personales</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 text-align-center">
+              <div class="container">
+                <div class="img">
+                  <img src="assets/img/habilidades-sociales-web.jpg" alt="Avatar" class="image">
+                </div>
+                <div class="overlay">
+                  <div class="text">Habilidades Sociales</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="arrow col-md-1 text-center">
+          <a class="volver" href="#encabezado"><i class="fas fa-arrow-circle-up"></i>Inicio</a>
+          <a class="avanzar" href="#portafolio"><p style="margin-bottom: 5px;">Sgte.</p><i class="fas fa-arrow-circle-down"></i></a>
         </div>
     </section>
+
+
 
     <!-- Sección Portafolio -->
     <section class="portafolio row container-fluid" id="portafolio">
-      <div class="col-sm-12 text-center">
+      <div class="col-md-1"></div>
+      <div class="col-sm-12 col-md-10 text-center">
         <p class="titulo">MIS TRABAJOS</p>
 
-        <div class="container">
-          <div class="img">
-            <img src="assets/img/meet-coffee-web.png" alt="Avatar" class="image">
-          </div>
-          <a href="Meet&Coffee/index.html">
-            <div class="overlay">
-              <div class="text">Meet & Coffee<br>(No versión movil)</div>
+        <!-- Versión móvil -->
+        <div class="trabajos-movil d-md-none">
+          <div class="container">
+            <div class="img">
+              <img src="assets/img/meet-coffee-web.png" alt="Avatar" class="image">
             </div>
-          </a>
+            <a href="Meet&Coffee/index.html">
+              <div class="overlay">
+                <div class="text">Meet & Coffee<br>(No versión movil)</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="container">
+            <div class="img">
+              <img src="assets/img/iguana-web.png" alt="Avatar" class="image">
+            </div>
+            <a href="Iguana/index.html">
+              <div class="overlay">
+                <div class="text">Iguana<br>(No versión movil)</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="container">
+            <div class="img">
+              <img src="assets/img/suricata-web.png" alt="Avatar" class="image">
+            </div>
+            <a href="Suricata/index.html">
+              <div class="overlay">
+                <div class="text">Suricata</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="container">
+            <div class="img">
+              <img src="assets/img/cuppon-web.png" alt="Avatar" class="image">
+            </div>
+            <a href="Cuppon/index.html">
+              <div class="overlay">
+                <div class="text">Cuppon</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="container">
+            <div class="img">
+              <img src="assets/img/ricomida-web.jpg" alt="Avatar" class="image">
+            </div>
+            <a href="Ricomida/index.html">
+              <div class="overlay">
+                <div class="text">Ricomida</div>
+              </div>
+            </a>
+          </div>
         </div>
 
-        <div class="container">
-          <div class="img">
-            <img src="assets/img/iguana-web.png" alt="Avatar" class="image">
-          </div>
-          <a href="Iguana/index.html">
-            <div class="overlay">
-              <div class="text">Iguana<br>(No versión movil)</div>
+        <!-- Versión web -->
+        <div class="portafolio-web">
+          <a id="control" class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <ul>
+                  <li style="margin-right: 7px;"><a href="Meet&Coffee/index.html"><img src="assets/img/meet-coffee-web.png"  alt="..."></a></li>
+                  <li style="margin-right: 7px;"><a href="Iguana/index.html"><img src="assets/img/iguana-web.png"  alt="..."></a></li>
+                  <li><a href="Suricata/index.html"><img src="assets/img/suricata-web.png"  alt="..."></a></li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <ul>
+                  <li style="margin-right: 7px;"><a href="Cuppon/index.html"><img src="assets/img/cuppon-web.png"  alt="..."></a></li>
+                  <li style="margin-right: 7px;"><a href="Ricomida/index.html"><img src="assets/img/ricomida-web.jpg"  alt="..."></a></li>
+                  <li><a href="https://jolicienta.github.io/Mi-sitio-web/"><img src="assets/img/venta-libros-web.png" alt="..."></a></li>
+                </ul>
+              </div>
+
             </div>
+          </div>
+          <a id="control" class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
           </a>
         </div>
-
-        <div class="container">
-          <div class="img">
-            <img src="assets/img/suricata-web.png" alt="Avatar" class="image">
-          </div>
-          <a href="Suricata/index.html">
-            <div class="overlay">
-              <div class="text">Suricata</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="container">
-          <div class="img">
-            <img src="assets/img/cuppon-web.png" alt="Avatar" class="image">
-          </div>
-          <a href="Cuppon/index.html">
-            <div class="overlay">
-              <div class="text">Cuppon</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="container">
-          <div class="img">
-            <img src="assets/img/ricomida-web.jpg" alt="Avatar" class="image">
-          </div>
-          <a href="Ricomida/index.html">
-            <div class="overlay">
-              <div class="text">Ricomida</div>
-            </div>
-          </a>
-        </div>
-
       </div>
-
+      <div class="arrow col-md-1 text-center">
+        <a class="volver" href="#encabezado"><i class="fas fa-arrow-circle-up"></i>Inicio</a>
+        <a class="avanzar" href="#contacto"><p style="margin-bottom: 5px;">Sgte.</p><i class="fas fa-arrow-circle-down"></i></a>
+      </div>
     </section>
+
 
     <!-- Sección Contacto y Redes Sociales -->
     <section class="contacto row container-fluid" id="contacto">
-      <div class="col-sm-12 text-center">
+      <div class="col-sm-12 col-md-11 text-center">
         <p class="titulo">Gracias por visitar mi portafolio</p>
         <p class="subtitulo">Si te ha gustado mi trabajo...</p>
         <a class="typeform-share button" href="https://nataliacampos165412.typeform.com/to/TUtV15" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#543956;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:15px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">¡Contáctame! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
         <p class="subtitulo mt-5">Puedes visitar también mis redes sociales</p>
         <ul>
-          <li style="margin-right: 10px;"><a href="https://www.linkedin.com/in/natalia-camposg/"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://github.com/Jolicienta"><i class="fab fa-github-square"></i></a></li>
+          <li style="margin-right: 10px;"><a id="link-contacto" href="https://www.linkedin.com/in/natalia-camposg/"><i class="fab fa-linkedin"></i></a></li>
+          <li><a id="link-contacto" href="https://github.com/Jolicienta"><i class="fab fa-github-square"></i></a></li>
         </ul>
       </div>
+      <div class="arrow col-md-1 text-center">
+        <a class="volver" href="#encabezado"><i class="fas fa-arrow-circle-up"></i>Inicio</a>
+      </div>
 
+      <!-- FOOTER -->
+      <div class="footer row container-fluid">
+        <div class="col-sm-12 col-md-12 text-center">
+          <p class="apodo">"Jolicienta"</p>
+          <p>© Todos los derechos reservados, 2020</p>
+        </div>
+      </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="row container-fluid">
-      <div class="col-sm-12 text-center">
-        <p class="apodo">"Jolicienta"</p>
-        <p>© Todos los derechos reservados, 2020</p>
-      </div>
-    </footer>
 
 
     <!-- Scripts para el formulario de Typeform -->
