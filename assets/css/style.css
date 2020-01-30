@@ -25,39 +25,6 @@ body {
   padding: 0;
 }
 
-/* Estilos usados en todo el layout */
-
-/* Estilos versión web */
-@media (min-width: 768px) {
-/* Botones "volver a inicio" y "siguiente" */
-  .arrow {
-    height: 100vh;
-    text-align: center;
-  }
-
-  .arrow a {
-    text-decoration: none;
-  }
-
-  .arrow i {
-    font-size: 40px;
-    margin: auto;
-  }
-
-  .volver, .avanzar {
-    text-decoration: none;
-    position: absolute;
-  }
-
-  .volver {
-    top: 4vh;
-  }
-
-  .avanzar {
-    top: 80vh;
-  }
-}
-
 /* Estilo de TITULOS Y SUBTITULOS */
 .titulo {
   font-family: 'Amatic SC', cursive;
@@ -216,10 +183,6 @@ body {
     width: 100%;
   }
 
-  .arrow {
-    display: none;
-  }
-
   .modal-title, .info {
     font-family: 'Handlee', cursive;
     font-size: 25px;
@@ -270,14 +233,6 @@ body {
 
 /* Estilos versión web */
 @media (min-width: 768px) {
-  .yo .volver,.yo .avanzar {
-    color: #6E5E64;
-  }
-
-  .yo .volver:hover,.yo .avanzar:hover {
-    color: #e9d7cd;
-  }
-
   .yo {
     height: 100vh;
     align-items: center;
@@ -307,8 +262,8 @@ body {
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     text-align: center;
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 27px;
   }
 
   .quote span {
@@ -386,16 +341,6 @@ body {
 
 /* Estilos versión web */
 @media (min-width: 768px) {
-  .conocimientos .volver,
-  .conocimientos .avanzar {
-    color: #FFFFFF;
-  }
-
-  .conocimientos .volver:hover,
-  .conocimientos .avanzar:hover {
-    color: #F9B1BF;
-  }
-
   .conocimientos {
     height: 100vh;
   }
@@ -403,14 +348,15 @@ body {
   .conocimientos .titulo {
     font-size: 40px;
     margin-top: 20px;
+    margin-bottom: 40px;
   }
 
   .accordion .card-header {
-    height: 4em;
+    height: 5em;
   }
 
   .accordion .btn {
-    height: 4em;
+    height: 5em;
   }
 
   .conocimientos .fab, .fas {
@@ -547,16 +493,6 @@ body {
 
 /* Estilos versión web */
 @media (min-width: 768px) {
-  .habilidades .volver,
-  .habilidades .avanzar {
-    color: #9c1c79;;
-  }
-
-  .habilidades .volver:hover,
-  .habilidades .avanzar:hover {
-    color: #F9B1BF;
-  }
-
   .habilidades {
     height: 100vh;
   }
@@ -573,13 +509,14 @@ body {
   .image {
     position: absolute;
     display: block;
-    width: auto;
+    width: 300px;
     height: 80vh;
     overflow: hidden;
   }
 
   .overlay {
-    width: 260px;
+    width: 305px;
+    height: 80vh;
     border-radius: 20px;
     margin-left: 11px;
     position: absolute;
@@ -685,16 +622,6 @@ body {
 
 /* Estilos versión web */
 @media (min-width: 768px) {
-  .portafolio .volver,
-  .portafolio .avanzar {
-    color: #FFFFFF;;
-  }
-
-  .portafolio .volver:hover,
-  .portafolio .avanzar:hover {
-    color: #F9B1BF;
-  }
-
   .portafolio {
     height: 100vh;
   }
@@ -787,31 +714,16 @@ body {
 
 /* Estilos versión web */
 @media (min-width: 768px) {
-  .contacto .volver,
-  .contacto .avanzar {
-    color: #f2bff9;;
-  }
-
-  .contacto .volver:hover,
-  .contacto .avanzar:hover {
-    color: #D31483;
-  }
-
-  .contacto .footer {
-    margin-bottom: -1vh;
-  }
   .contacto .arrow {
     height: 75vh;
   }
 }
 
-/* Estilos versión movil */
-@media (max-width: 575.98px) {
-  .contacto .footer {
-    margin-bottom: -7vh;
-  }
+.contacto .footer {
+  margin-bottom: -11vh;
 }
 
+/* Estilos del FOOTER */
  .footer {
   background-image: url(../img/fondo.jpg);
   background-position: center;
